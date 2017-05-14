@@ -1,0 +1,6 @@
+<h1>Add new task</h1>
+<form method="post" action="/entries">
+	<input type="text" name="entry[description]" placeholder="what needs to get done?">
+	<input type="hidden" name="entry[user_id" value="<%= current_user.id %>">
+	<input type="submit" value="add">
+</form>

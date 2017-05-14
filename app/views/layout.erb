@@ -7,10 +7,13 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
+
   <!--
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="/js/application.js"></script>
@@ -18,6 +21,19 @@
   <title></title>
 </head>
 <body>
+
+<header>
+  <h1 class="header_item header_item_left">list</h1>
+  <% if current_user %>
+    <p class="header_item header_item_right"><%= erb :'/sessions/logout' %></p>
+    <a class="header_item header_item_right" href="/entries/new">New</a>
+  <% else %>
+    <a class="header_item header_item_right" href="/users/new">Register</a>
+    <a class="header_item header_item_right" href="/sessions/new">Login</a>
+  <% end %>
+
+</header>
+
   <%= yield %>
 </body>
 </html>
