@@ -14,6 +14,6 @@ post '/sessions' do
 end
 
 delete '/sessions/logout' do 
-  session(:user_id).delete
+  session.delete(:user_id)
   redirect '/'
 end  

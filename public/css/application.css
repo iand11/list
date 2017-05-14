@@ -1,0 +1,61 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+html{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQoVsfw5uA3npbi4o63qb_64VSZcEHFmD8cruZXX0NmUlILCu");
+}
+
+header {
+	background-color: white;
+	margin:auto;
+	width:100%;
+	top:0;
+	height:10%;
+	position: fixed;
+	text-align: center;
+}
+
+.header_item {
+	display:inline-block;
+}
+
+.header_item_right {
+	float: right;
+	margin:1%;
+	font-size: 120%;
+	padding-top: 18px;
+	color:black;
+}
+
+.header_item_left {
+	float: left;
+}
+
+.container {
+	background-image:url("https://s-media-cache-ak0.pinimg.com/originals/12/44/0c/12440c6da1fee88f37be82d9f0088f46.jpg");
+	top:200px;
+  margin: 200px auto;
+  width: 800px;
+  padding: 0px 10px 10px 10px;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 2%;
+}
+
+.name_on_list {
+	padding-top:10%;
+	padding-bottom:4%;
+
+}
+
+.entry_description {
+	font-family: Chalkduster, fantasy;
+	/*border:slid;*/
+	margin:19px 0px;
+}

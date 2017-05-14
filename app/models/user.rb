@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
   end
 
   def name_for_header
-    self.first_name + "'s"
+    self.first_name + "'s" + " list"
   end
 
 end
