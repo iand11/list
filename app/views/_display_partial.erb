@@ -1,0 +1,9 @@
+
+	<ul class="items_list">
+		<% current_user.entries.each do |entry| %>
+			<% if !entry.completed %>
+				<%= erb :"_entry_partial", layout: false, locals:{entry: entry} %>
+				
+			<% end %>
+		<% end %>
+	</ul>

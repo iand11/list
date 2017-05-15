@@ -67,7 +67,10 @@ header {
 	margin:19px 0px;
 	width:550px;
 
-	
+}
+
+.new_entry_input {
+	width:400px;
 }
 
 
