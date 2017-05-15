@@ -48,7 +48,7 @@ header {
 
 .container {
 	background-image:url("https://s-media-cache-ak0.pinimg.com/originals/12/44/0c/12440c6da1fee88f37be82d9f0088f46.jpg");
-	top:200px;
+	top:150px;
   margin: 200px auto;
   width: 800px;
   padding: 0px 10px 10px 10px;
@@ -73,6 +73,14 @@ header {
 	width:400px;
 }
 
+.completed {
+	text-decoration: line-through;
+	color:red;
+}
+
+.title {
+	color:black;
+}
 
 /*
 .edit_form {

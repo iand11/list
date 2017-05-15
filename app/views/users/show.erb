@@ -1,8 +1,12 @@
-
+<div class="container">
+	<h1 class="name_on_list"><%= current_user.name_for_header %></h1>
 	<ul class="items_list">
 		<% current_user.entries.each do |entry| %>
 			<% if !entry.completed %>
 				<%= erb :"_entry_partial", layout: false, locals:{entry: entry} %>
+			<% else %>
+				<h2 class="entry_description completed"><%=entry.description %></h2>
 			<% end %>
 		<% end %>
 	</ul>
+</div>
