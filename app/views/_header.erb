@@ -1,0 +1,14 @@
+<header>
+  <h1 class="header_item header_item_left">list</h1>
+  <% if current_user %>
+    <div class="header_item header_item_right logout"><%= erb :'/sessions/logout', layout: false %></div>
+    <a class="header_item header_item_right new_entry_button" href="/entries/new">New</a>
+    <div class="header_item header_item_right new_entry_form"><%= erb :'/entries/new', layout: false %></div>
+  <% else %>
+    <a class="header_item header_item_right register_button" href="/users/new">Register</a>
+    <div class="header_item header_item_right header_register_form"><%= erb :'/users/new', layout: false %> </div>
+    <a class="header_item header_item_right login_button" href="/sessions/new">Login</a>
+    <div class="header_item header_item_right header_login_form"><%= erb :'/sessions/new', layout: false %> </div>
+  <% end %>
+
+</header>

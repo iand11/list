@@ -2,6 +2,7 @@
 
 *{
 	box-sizing: border-box;
+	/*border:solid;*/
 }
 
 a {
@@ -34,8 +35,15 @@ header {
 	color:black;
 }
 
+.logout {
+	padding-bottom:10px;
+}
+
+
+
 .header_item_left {
 	float: left;
+	margin-left:1%;
 }
 
 .container {
@@ -56,6 +64,27 @@ header {
 
 .entry_description {
 	font-family: Chalkduster, fantasy;
-	/*border:slid;*/
 	margin:19px 0px;
+	width:550px;
+
+	
 }
+
+
+/*
+.edit_form {
+	width:100px;
+	float:right;
+	padding-bottom: 100px;
+	margin-bottom:20px;
+	/*padding-left:300px;*/
+
+/*.edit_button{
+	float:right;
+}
+
+.test{
+	margin:10,0;
+	border:solid;
+}*/
+

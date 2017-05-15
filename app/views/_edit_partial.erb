@@ -1,0 +1,6 @@
+<form class="edit_form" method="post" action="/entries/<%= entry.id %> ">
+	<input type="submit" value="complete">
+	<input type="hidden" name="_method" value="patch">
+	<input type="hidden" name="entry[completed]" value="true">
+	
+</form>
