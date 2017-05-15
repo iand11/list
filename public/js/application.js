@@ -6,7 +6,7 @@ $(document).ready(function() {
 	newEntryFormListener();
 	loginButtonListener();
 	registerButtonListener();
-	editLinkListener();
+	editButtonListener();
 });
 
 var newEntryButtonListener = function(){
@@ -57,21 +57,23 @@ var registerButtonListener = function(){
 	})
 }
 
-var editLinkListener = function(){
-	$(".edit_link").on("click",".entry_description", function(event){
+var editButtonListener = function(){
+	$(".items_list").on("submit",".edit_form",function(event){
 		event.preventDefault();
 
-		link = $(this)
-		url = $(this).attr('href')
-			console.log(url)
+		$form = $(this)
+		url = $form.attr("action")
+		method = $form.attr("method")
+		data = $form.serialize();
 
 		$.ajax({
-			url: url
+			url: url,
+			method: method,
+			data: data
 		})
 
 		.done(function(responce){
-			// $(link).closest(".edit_link").append(responce)
-			
+			$(".items_list").replaceWith(responce)
 		})
 	})
 }

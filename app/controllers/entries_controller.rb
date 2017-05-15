@@ -37,5 +37,9 @@ end
 patch '/entries/:id' do   
   @entry = Entry.find(params[:id])
   @entry.update(params[:entry])
-  redirect '/'
+  if request.xhr?
+    erb :'_display_partial', layout: false, locals:{entry: @entry}
+  else
+    redirect '/'
+  end 
 end 
