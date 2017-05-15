@@ -21,19 +21,7 @@
   <title></title>
 </head>
 <body>
-
-<header>
-  <h1 class="header_item header_item_left">list</h1>
-  <% if current_user %>
-    <p class="header_item header_item_right"><%= erb :'/sessions/logout' %></p>
-    <a class="header_item header_item_right" href="/entries/new">New</a>
-  <% else %>
-    <a class="header_item header_item_right" href="/users/new">Register</a>
-    <a class="header_item header_item_right" href="/sessions/new">Login</a>
-  <% end %>
-
-</header>
-
+  <%= erb :'_header' %>
   <%= yield %>
 </body>
 </html>
