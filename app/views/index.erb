@@ -2,6 +2,9 @@
 <% if current_user%>
 	<h1 class="name_on_list"><%= current_user.name_for_header %></h1>
 	<%= erb :'_display_partial' %>
+<% else %>
+	<h1 class="name_on_list">to do list</h1>
+	<%= erb :'_no_user_display' %>
 <% end %>
 
 </div>
