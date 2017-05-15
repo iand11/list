@@ -1,5 +1,5 @@
 
-	<h2 class="entry_description"><%= 	entry.description %></h2>
+	<h2 class="entry_description"><%=entry.description %></h2>
 	<form class="edit_form" method="post" 	action="/entries/<%= entry.id %> ">
 		<input type="hidden" name="_method" 	value="patch">
 		<input type="hidden" name="entry[completed]" value="true">
