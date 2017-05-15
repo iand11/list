@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".edit_form").hide();
 	$(".header_login_form").hide();
 	$(".header_register_form").hide();
 	$(".new_entry_form").hide();
@@ -7,6 +8,7 @@ $(document).ready(function() {
 	loginButtonListener();
 	registerButtonListener();
 	editButtonListener();
+	entryRowListener();
 });
 
 var newEntryButtonListener = function(){
@@ -37,6 +39,7 @@ var newEntryFormListener = function(){
 			$(".full_entry_form")[0].reset
 			$(".full_entry_form").hide();
 			$(".new_entry_button").show();
+			$(".edit_form").hide();
 		})
 	})
 }
@@ -77,3 +80,14 @@ var editButtonListener = function(){
 		})
 	})
 }
+
+var entryRowListener = function(){
+	$(".items_list").on("click",".entry_row", function(){
+		$(".edit_form").slideDown("slow");
+	})	
+	$(".items_list").on("dblclick",".entry_row", function(){
+		$(".edit_form").slideUp("slow");
+	})
+
+}
+
