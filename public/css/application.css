@@ -10,7 +10,9 @@ a {
 }
 
 html{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQoVsfw5uA3npbi4o63qb_64VSZcEHFmD8cruZXX0NmUlILCu");
+  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQoVsfw5uA3npbi4o63qb_64VSZcEHFmD8cruZXX0NmUlILCu");*/
+  background-image: url("https://unsplash.it/1900/1200?image=486");
+  /*background-image: url("https://unsplash.it/1900/1200?image=847");*/
 }
 
 header {
@@ -35,9 +37,6 @@ header {
 	color:black;
 }
 
-.logout {
-	padding-bottom:10px;
-}
 
 
 
@@ -94,30 +93,12 @@ header {
 .logout_button{
 	background-color: transparent;
 	border:none;
-	padding:4%;
-	margin-bottom: 10px;
+	font-size: 120%;
 }
 
-/*.edit_form {
-	width:100px;
+.logout {
 	float:right;
-	padding-top:-100px;
-}*/
+	margin-top:28px;
+}
 
-/*
-.edit_form {
-	width:100px;
-	float:right;
-	padding-bottom: 100px;
-	margin-bottom:20px;
-	/*padding-left:300px;
-/*
-
-
-
-
-/*.test{
-	margin:10,0;
-	border:solid;
-}*/
 
