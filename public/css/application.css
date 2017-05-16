@@ -51,13 +51,14 @@ header {
   margin: 200px auto;
   width: 800px;
   padding: 0px 10px 10px 10px;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 8px 8px 5px #888888;
   border-radius: 2%;
 }
 
 .name_on_list {
 	padding-top:10%;
 	padding-bottom:4%;
+	font-family: Courier, monospace;
 
 }
 
