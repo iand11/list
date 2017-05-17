@@ -37,7 +37,57 @@ header {
 	color:black;
 }
 
+.new_entry_button:after  {
+	padding-bottom:2px;
+	display:block;
+  content: '';
+  border-bottom: solid 3px black;  
+  transform: scaleX(0.0001);  
+  transition: transform 300ms ease-in-out;
+}
 
+.new_entry_button:hover:after {
+  transform: scaleX(1);
+}
+
+.profile_button:after  {
+	padding-bottom:2px;
+	display:block;
+  content: '';
+  border-bottom: solid 3px black;  
+  transform: scaleX(0.0001);  
+  transition: transform 300ms ease-in-out;
+}
+
+.profile_button:hover:after {
+  transform: scaleX(1);
+}
+
+.login_button:after  {
+	padding-bottom:2px;
+	display:block;
+  content: '';
+  border-bottom: solid 3px black;  
+  transform: scaleX(0.0001);  
+  transition: transform 300ms ease-in-out;
+}
+
+.login_button:hover:after {
+  transform: scaleX(1);
+}
+
+.register_button:after  {
+	padding-bottom:2px;
+	display:block;
+  content: '';
+  border-bottom: solid 3px black;  
+  transform: scaleX(0.0001);  
+  transition: transform 300ms ease-in-out;
+}
+
+.register_button:hover:after {
+  transform: scaleX(1);
+}
 
 
 .header_item_left {
@@ -96,6 +146,7 @@ header {
 	border:none;
 	font-size: 120%;
 }
+
 
 .logout {
 	float:right;
