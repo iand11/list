@@ -11,6 +11,7 @@ require 'rubygems'
 require 'uri'
 require 'pathname'
 
+require 'twilio-ruby'
 require 'bcrypt'
 require 'pg'
 require 'active_record'
