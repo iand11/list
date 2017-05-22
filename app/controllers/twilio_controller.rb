@@ -1,22 +1,7 @@
 post '/receive_sms' do 
-  # @entry = Entry.all
-
-  # @array = []
-  # @entry.each do |entry|
-  #   @array << entry.description 
-  # end
-  # x = @array.join(" ") 
-
-  # response = Twilio::TwiML::Response.new do |r|
-  #   r.Message 'Hi there!'
-  # end 
-
-  # response.to_xml
 
   number = params["From"]
   body = params["Body"]
-  p "*" * 100
-  p number
   x = user(number, body)
   person = User.find_by(phone_number: number[1..-1])
   content_type 'text/xml'
