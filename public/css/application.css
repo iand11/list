@@ -2,6 +2,7 @@
 
 *{
 	box-sizing: border-box;
+  outline: none;
 	/*border:solid;*/
 }
 
@@ -153,4 +154,7 @@ header {
 	margin-top:28px;
 }
 
-
+.new_button {
+  background-color: white;
+  border:none;
+}
