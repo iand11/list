@@ -7,13 +7,13 @@ helpers do
   
   def user(phone_number, body)
     @user = User.find_by(phone_number: phone_number[1..-1])
-    if @user && body == "show"
+    if @user && body.downcase == "show"
       show_entries
-    elsif @user && body[0..2] == "add"
+    elsif @user && body[0..2].downcase == "add"
       task = body[4..-1]
       Entry.create(description:"#{task}", completed: false, user_id:"#{@user.id}")
       show_entries
-    elsif @user && body[0..5] == "delete"
+    elsif @user && body[0..5].downcase == "delete"
       task = body[7..-1]
       @entry = Entry.find_by(description: task)
       if @entry
