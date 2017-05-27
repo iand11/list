@@ -58,6 +58,7 @@ var registerButtonListener = function(){
 		event.preventDefault();
 		$(".header_register_form").show();
 		$(this).hide();
+		$(".login_button").hide();
 	})
 }
 
