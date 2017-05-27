@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".container").fadeIn("slow");
 	$(".edit_form").hide();
 	$(".header_login_form").hide();
 	$(".header_register_form").hide();
