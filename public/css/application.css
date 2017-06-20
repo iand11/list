@@ -3,7 +3,6 @@
 *{
 	box-sizing: border-box;
   outline: none;
-	/*border:solid;*/
 }
 
 a {
@@ -11,9 +10,7 @@ a {
 }
 
 html{
-  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQoVsfw5uA3npbi4o63qb_64VSZcEHFmD8cruZXX0NmUlILCu");*/
   background-image: url("https://unsplash.it/1900/1200?image=486");
-  /*background-image: url("https://unsplash.it/1900/1200?image=847");*/
 }
 
 header {
@@ -21,7 +18,7 @@ header {
 	margin:auto;
 	width:100%;
 	top:0;
-	height:10%;
+	height:5em;
 	position: fixed;
 	text-align: center;
 }
@@ -31,8 +28,9 @@ header {
 }
 
 .header_item_right {
+  display: inline-block;
 	float: right;
-	margin:1%;
+  margin:15px 10px 10px 10px;
 	font-size: 120%;
 	padding-top: 18px;
 	color:black;
@@ -145,16 +143,21 @@ header {
 .logout_button{
 	background-color: transparent;
 	border:none;
-	font-size: 120%;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-top: -6px;
 }
 
-
-.logout {
-	float:right;
-	margin-top:28px;
-}
 
 .new_button {
   background-color: white;
   border:none;
+}
+
+/*.new_entry_form {
+  margin-top: 11px;
+}*/
+
+.form_right {
+  margin-top: 11px;
 }
