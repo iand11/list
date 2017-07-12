@@ -14,4 +14,5 @@ List is a web application that allows the user the ability to manage a to do lis
 ## Deployment
 https://the--list.herokuapp.com
 
-Built with : Ruby, Javascript, HTML 5, CSS 3, Jquery, Ajax, Sinatra, and Twilio's API
+## Tech Stack
+Ruby, Javascript, HTML 5, CSS 3, Jquery, Ajax, Sinatra, and Twilio's API
