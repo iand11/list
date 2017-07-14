@@ -1,47 +1,45 @@
-
-
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
   outline: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-html{
+html {
   background-image: url("https://unsplash.it/1900/1200?image=486");
 }
 
 header {
-	background-color: white;
-	margin:auto;
-	width:100%;
-	top:0;
-	height:5em;
-	position: fixed;
-	text-align: center;
+  background-color: white;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  height: 5em;
+  position: fixed;
+  text-align: center;
 }
 
 .header_item {
-	display:inline-block;
+  display: inline-block;
 }
 
 .header_item_right {
   display: inline-block;
-	float: right;
-  margin:15px 10px 10px 10px;
-	font-size: 120%;
-	padding-top: 18px;
-	color:black;
+  float: right;
+  margin: 15px 10px 10px 10px;
+  font-size: 120%;
+  padding-top: 18px;
+  color: black;
 }
 
-.new_entry_button:after  {
-	padding-bottom:2px;
-	display:block;
+.new_entry_button:after {
+  padding-bottom: 2px;
+  display: block;
   content: '';
-  border-bottom: solid 3px black;  
-  transform: scaleX(0.0001);  
+  border-bottom: solid 3px black;
+  transform: scaleX(0.0001);
   transition: transform 300ms ease-in-out;
 }
 
@@ -49,12 +47,12 @@ header {
   transform: scaleX(1);
 }
 
-.profile_button:after  {
-	padding-bottom:2px;
-	display:block;
+.profile_button:after {
+  padding-bottom: 2px;
+  display: block;
   content: '';
-  border-bottom: solid 3px black;  
-  transform: scaleX(0.0001);  
+  border-bottom: solid 3px black;
+  transform: scaleX(0.0001);
   transition: transform 300ms ease-in-out;
 }
 
@@ -62,12 +60,12 @@ header {
   transform: scaleX(1);
 }
 
-.login_button:after  {
-	padding-bottom:2px;
-	display:block;
+.login_button:after {
+  padding-bottom: 2px;
+  display: block;
   content: '';
-  border-bottom: solid 3px black;  
-  transform: scaleX(0.0001);  
+  border-bottom: solid 3px black;
+  transform: scaleX(0.0001);
   transition: transform 300ms ease-in-out;
 }
 
@@ -75,12 +73,12 @@ header {
   transform: scaleX(1);
 }
 
-.register_button:after  {
-	padding-bottom:2px;
-	display:block;
+.register_button:after {
+  padding-bottom: 2px;
+  display: block;
   content: '';
-  border-bottom: solid 3px black;  
-  transform: scaleX(0.0001);  
+  border-bottom: solid 3px black;
+  transform: scaleX(0.0001);
   transition: transform 300ms ease-in-out;
 }
 
@@ -88,15 +86,14 @@ header {
   transform: scaleX(1);
 }
 
-
 .header_item_left {
-	float: left;
-	margin-left:1%;
+  float: left;
+  margin-left: 1%;
 }
 
 .container {
-	background-image:url("https://s-media-cache-ak0.pinimg.com/originals/12/44/0c/12440c6da1fee88f37be82d9f0088f46.jpg");
-	top:150px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/12/44/0c/12440c6da1fee88f37be82d9f0088f46.jpg");
+  top: 150px;
   margin: 200px auto;
   width: 800px;
   padding: 0px 10px 10px 10px;
@@ -105,58 +102,51 @@ header {
 }
 
 .name_on_list {
-	padding-top:10%;
-	padding-bottom:4%;
-	font-family: Courier, monospace;
-
+  padding-top: 10%;
+  padding-bottom: 4%;
+  font-family: Courier, monospace;
 }
 
 .entry_description {
-	font-family: Chalkduster, fantasy;
-	margin:19px 0px;
-	width:550px;
-
+  font-family: Chalkduster, fantasy;
+  margin: 19px 0px;
+  width: 550px;
 }
 
 .new_entry_input {
-	width:400px;
-	padding-top:2px;
+  width: 400px;
+  padding-top: 2px;
 }
 
 .completed {
-	text-decoration: line-through;
-	color:red;
+  text-decoration: line-through;
+  color: red;
 }
 
 .title {
-	color:black;
+  color: black;
 }
 
-.edit_button{
-	font-family: Chalkduster, fantasy;
-	background-color: transparent;
-	height:50px;
-	font-size: 120%;
-	border:none;
+.edit_button {
+  font-family: Chalkduster, fantasy;
+  background-color: transparent;
+  height: 50px;
+  font-size: 120%;
+  border: none;
 }
 
-.logout_button{
-	background-color: transparent;
-	border:none;
+.logout_button {
+  background-color: transparent;
+  border: none;
   display: inline-block;
   padding-bottom: 5px;
   margin-top: -6px;
 }
 
-
 .new_button {
   background-color: white;
-  border:none;
+  border: none;
 }
-
-/*.new_entry_form {
-  margin-top: 11px;
-}*/
 
 .form_right {
   margin-top: 11px;
